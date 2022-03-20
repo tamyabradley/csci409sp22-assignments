@@ -12,5 +12,5 @@ urlpatterns = [
     # Example url /airports/MYR
     # NOTICE: the airport_code parameter in the url matches
     #    the parameter in the airport_info fUnction
-path('<str:confirmation_number>/', views.ticket_search),
+path('/<str:confirmation_number>/', views.ticket_search),
 ]

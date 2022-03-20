@@ -5,7 +5,7 @@ from airports.models import Airport
 # Create your models here.
 class Airline(models.Model):
     airline_name = models.CharField(max_length=200)
-    airline_code = models.CharField(max_length=2)
+    airline_code = models.CharField(max_length=3)
 
 class Flights(models.Model):
     airline = models.ForeignKey(Airline, on_delete=models.CASCADE)
