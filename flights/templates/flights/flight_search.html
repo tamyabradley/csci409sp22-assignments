@@ -1,0 +1,10 @@
+{% extends 'base.html' %} {% block content %}
+{% for flight in flights %}
+<p>
+    Airline Code: {{ flight.airline.airline_code }} <br>
+    Flight Number: {{ flight.flight_number }} <br>
+    Departure Date: {{ flight.departure }} <br>
+    Arrival Date: {{ flight.arrival }} <br>
+</p>
+{% endfor %}
+    {% endblock %}
